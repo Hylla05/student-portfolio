@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Contact Hyllamanda Reuben using a JavaScript-validated contact form.">
+  <meta name="theme-color" content="#10182d">
+  <title>Contact | Hyllamanda Reuben</title>
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+
+  <header class="site-header">
+    <div class="container nav-wrapper">
+      <a class="brand" href="index.html" aria-label="Hyllamanda Reuben portfolio home">
+        <span class="brand-mark" aria-hidden="true">HR</span>
+        <span class="brand-text">
+          <span>Hyllamanda Reuben</span>
+          <small>Student portfolio</small>
+        </span>
+      </a>
+
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-navigation">
+        <span class="menu-toggle-lines" aria-hidden="true"></span>
+        <span class="sr-only">Toggle navigation</span>
+      </button>
+
+      <nav class="site-nav" id="site-navigation" aria-label="Primary navigation">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="projects.html">Projects</a></li>
+          <li><a href="planner.html">Planner</a></li>
+          <li><a href="contact.html" aria-current="page">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main-content">
+    <section class="page-hero" aria-labelledby="page-title">
+      <div class="container">
+        <nav class="breadcrumbs" aria-label="Breadcrumb">
+          <a href="index.html">Home</a><span aria-hidden="true">/</span><span>Contact</span>
+        </nav>
+        <h1 id="page-title">Let’s start a thoughtful conversation.</h1>
+        <p>Reach out about academic collaboration, learning opportunities, technology ideas, or constructive feedback on my work.</p>
+      </div>
+    </section>
+
+    <section class="section" aria-labelledby="contact-title">
+      <div class="container contact-layout">
+        <aside class="card contact-panel reveal" aria-labelledby="contact-details-title">
+          <span class="eyebrow">Contact details</span>
+          <h2 id="contact-details-title">I’d be glad to hear from you.</h2>
+          <p>Use the form or one of the contact options below. Please do not include sensitive information in a public demonstration form.</p>
+
+          <ul class="contact-list">
+            <li>
+              <span class="contact-icon" aria-hidden="true">@</span>
+              <div>
+                <span>Email</span>
+                <a href="mailto:h.reuben2434@miva.edu.ng">h.reuben2434@miva.edu.ng</a>
+              </div>
+            </li>
+            <li>
+              <span class="contact-icon" aria-hidden="true">TEL</span>
+              <div>
+                <span>Phone</span>
+                <a href="tel:+2347088625993">07088625993</a>
+              </div>
+            </li>
+            <li>
+              <span class="contact-icon" aria-hidden="true">EDU</span>
+              <div>
+                <span>University</span>
+                <strong>Miva Open University</strong>
+              </div>
+            </li>
+            <li>
+              <span class="contact-icon" aria-hidden="true">DEP</span>
+              <div>
+                <span>Department</span>
+                <strong>Software Engineering</strong>
+              </div>
+            </li>
+          </ul>
+        </aside>
+
+        <section class="card contact-form-card reveal" aria-labelledby="contact-title">
+          <span class="eyebrow">Send a message</span>
+          <h2 id="contact-title">Contact form</h2>
+          <p>All fields are required. JavaScript checks for empty fields, a valid email format, and a phone number containing digits only.</p>
+
+          <div class="success-message" id="contact-success" role="status" tabindex="-1" hidden></div>
+
+          <form id="contact-form" class="form-grid" novalidate>
+            <div class="form-row">
+              <div class="form-field">
+                <label for="contact-name">Name</label>
+                <input id="contact-name" name="name" type="text" autocomplete="name" placeholder="Enter your full name" aria-describedby="contact-name-error" required>
+                <p class="field-error" id="contact-name-error" aria-live="polite"></p>
+              </div>
+
+              <div class="form-field">
+                <label for="contact-email">Email address</label>
+                <input id="contact-email" name="email" type="email" autocomplete="email" placeholder="name@example.com" aria-describedby="contact-email-error" required>
+                <p class="field-error" id="contact-email-error" aria-live="polite"></p>
+              </div>
+            </div>
+
+            <div class="form-field">
+              <label for="contact-phone">Phone number</label>
+              <input id="contact-phone" name="phone" type="tel" inputmode="numeric" autocomplete="tel" placeholder="Digits only, e.g. 07012345678" aria-describedby="contact-phone-error" required>
+              <p class="field-error" id="contact-phone-error" aria-live="polite"></p>
+            </div>
+
+            <div class="form-field">
+              <label for="contact-message">Message</label>
+              <textarea id="contact-message" name="message" maxlength="1000" placeholder="Write your message here..." aria-describedby="contact-message-error" required></textarea>
+              <p class="field-error" id="contact-message-error" aria-live="polite"></p>
+            </div>
+
+            <button class="button button-primary" type="submit">Validate and send message <span aria-hidden="true">→</span></button>
+            <p class="form-note">Demonstration only: the form validates information in the browser but does not transmit or store it on a server.</p>
+          </form>
+
+          <noscript>
+            <p class="project-note">JavaScript must be enabled to validate this contact form.</p>
+          </noscript>
+        </section>
+      </div>
+    </section>
+
+    <section class="section surface-white" aria-labelledby="contact-values-title">
+      <div class="container">
+        <header class="section-heading center reveal">
+          <span class="eyebrow">Good conversations</span>
+          <h2 id="contact-values-title">What I value when connecting</h2>
+          <p>Clear communication and respectful feedback make collaboration and learning more useful for everyone.</p>
+        </header>
+
+        <div class="feature-grid">
+          <article class="card feature-card reveal">
+            <span class="icon-tile" aria-hidden="true">01</span>
+            <h3>Clear purpose</h3>
+            <p>A short explanation of the idea, opportunity, or question helps create a focused conversation.</p>
+          </article>
+          <article class="card feature-card reveal">
+            <span class="icon-tile" aria-hidden="true">02</span>
+            <h3>Constructive feedback</h3>
+            <p>Specific suggestions help me understand what works, what can improve, and what to practise next.</p>
+          </article>
+          <article class="card feature-card reveal">
+            <span class="icon-tile" aria-hidden="true">03</span>
+            <h3>Shared learning</h3>
+            <p>I appreciate opportunities that encourage curiosity, collaboration, and responsible problem-solving.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-layout">
+      <p>© <span data-current-year>2026</span> Hyllamanda Reuben. Built with HTML, CSS &amp; JavaScript.</p>
+      <ul class="footer-links">
+        <li><a href="about.html">About</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="planner.html">Planner</a></li>
+      </ul>
+    </div>
+  </footer>
+
+  <div class="toast-region" aria-live="polite" aria-atomic="true"></div>
+</body>
+</html>

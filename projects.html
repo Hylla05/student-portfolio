@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Explore three sample software projects by Hyllamanda Reuben, including an academic planner, GPA calculator, and campus portal.">
+  <meta name="theme-color" content="#10182d">
+  <title>Projects | Hyllamanda Reuben</title>
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+
+  <header class="site-header">
+    <div class="container nav-wrapper">
+      <a class="brand" href="index.html" aria-label="Hyllamanda Reuben portfolio home">
+        <span class="brand-mark" aria-hidden="true">HR</span>
+        <span class="brand-text">
+          <span>Hyllamanda Reuben</span>
+          <small>Student portfolio</small>
+        </span>
+      </a>
+
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-navigation">
+        <span class="menu-toggle-lines" aria-hidden="true"></span>
+        <span class="sr-only">Toggle navigation</span>
+      </button>
+
+      <nav class="site-nav" id="site-navigation" aria-label="Primary navigation">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="projects.html" aria-current="page">Projects</a></li>
+          <li><a href="planner.html">Planner</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main-content">
+    <section class="page-hero" aria-labelledby="page-title">
+      <div class="container">
+        <nav class="breadcrumbs" aria-label="Breadcrumb">
+          <a href="index.html">Home</a><span aria-hidden="true">/</span><span>Projects</span>
+        </nav>
+        <h1 id="page-title">Ideas designed around student life.</h1>
+        <p>Three sample project concepts showing how responsive design and JavaScript can support planning, academic progress, and campus connection.</p>
+      </div>
+    </section>
+
+    <section class="section" aria-labelledby="projects-title">
+      <div class="container">
+        <header class="section-heading reveal">
+          <span class="eyebrow">Selected work</span>
+          <h2 id="projects-title">Academic project concepts</h2>
+          <p>Each concept begins with a clear user need and applies foundational web-development techniques to create a focused solution.</p>
+        </header>
+
+        <div class="project-grid">
+          <article class="card project-card reveal">
+            <div class="project-image-wrap">
+              <img src="studyflow-planner.webp" alt="StudyFlow academic planner dashboard displayed on a laptop" width="1200" height="746" loading="lazy">
+              <span class="project-number">Project 01</span>
+            </div>
+            <div class="project-content">
+              <ul class="tag-list" aria-label="StudyFlow technologies">
+                <li class="tag">HTML</li>
+                <li class="tag">CSS Grid</li>
+                <li class="tag">JavaScript</li>
+                <li class="tag">DOM</li>
+              </ul>
+              <h2>StudyFlow Academic Planner</h2>
+              <p>
+                A browser-based task manager created to help students organise coursework. Users can add an academic task, assign its course, due date, and priority, then mark it complete or remove it as plans change.
+              </p>
+              <ul class="project-features">
+                <li>Dynamic task creation</li>
+                <li>Completion tracking</li>
+                <li>Task filtering</li>
+                <li>Responsive interface</li>
+              </ul>
+              <div class="button-row">
+                <a class="button button-primary button-sm" href="planner.html">Open working demo</a>
+                <a class="button button-secondary button-sm" href="#" data-simulated-link="StudyFlow source code">Source code</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="card project-card reveal">
+            <div class="project-image-wrap">
+              <img src="gradepoint-calculator.webp" alt="GradePoint calculator interface showing course rows, charts, and an academic score" width="1200" height="746" loading="lazy">
+              <span class="project-number">Project 02</span>
+            </div>
+            <div class="project-content">
+              <ul class="tag-list" aria-label="GradePoint technologies">
+                <li class="tag">HTML Forms</li>
+                <li class="tag">CSS</li>
+                <li class="tag">JavaScript</li>
+                <li class="tag">Arrays</li>
+              </ul>
+              <h2>GradePoint Calculator</h2>
+              <p>
+                A GPA calculator concept that lets a student enter courses, credit units, and grades. JavaScript processes the entries and updates a clear semester summary, reducing the effort and errors involved in manual calculation.
+              </p>
+              <ul class="project-features">
+                <li>Course entry form</li>
+                <li>Input validation</li>
+                <li>Automatic calculation</li>
+                <li>Dynamic result summary</li>
+              </ul>
+              <div class="button-row">
+                <a class="button button-primary button-sm" href="#" data-simulated-link="GradePoint live demo">View simulated demo</a>
+                <a class="button button-secondary button-sm" href="#" data-simulated-link="GradePoint source code">Source code</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="card project-card reveal">
+            <div class="project-image-wrap">
+              <img src="campus-connect.webp" alt="Campus Connect student portal shown on desktop, tablet, and mobile screens" width="1200" height="746" loading="lazy">
+              <span class="project-number">Project 03</span>
+            </div>
+            <div class="project-content">
+              <ul class="tag-list" aria-label="Campus Connect technologies">
+                <li class="tag">Semantic HTML</li>
+                <li class="tag">Flexbox</li>
+                <li class="tag">CSS Grid</li>
+                <li class="tag">Responsive Design</li>
+              </ul>
+              <h2>Campus Connect Portal</h2>
+              <p>
+                A responsive university portal concept that brings announcements, learning resources, events, and student collaboration into one organised interface that works across desktop and mobile screens.
+              </p>
+              <ul class="project-features">
+                <li>Mobile-first navigation</li>
+                <li>Resource categories</li>
+                <li>Event overview</li>
+                <li>Accessible structure</li>
+              </ul>
+              <div class="button-row">
+                <a class="button button-primary button-sm" href="#" data-simulated-link="Campus Connect live demo">View simulated demo</a>
+                <a class="button button-secondary button-sm" href="#" data-simulated-link="Campus Connect source code">Source code</a>
+              </div>
+            </div>
+          </article>
+        </div>
+
+        <p class="project-note" id="project-note">
+          <strong>Project note:</strong> These are academic sample concepts prepared to demonstrate design thinking and foundational web-development skills. StudyFlow links to the working planner in this website; the other demo and source-code buttons are intentionally simulated and provide an on-screen notification when selected.
+        </p>
+      </div>
+    </section>
+
+    <section class="section surface-dark" aria-labelledby="process-title">
+      <div class="container">
+        <header class="section-heading reveal">
+          <span class="eyebrow">My approach</span>
+          <h2 id="process-title">From challenge to interface</h2>
+          <p>A simple four-stage process helps keep each project focused on its purpose and users.</p>
+        </header>
+
+        <div class="process-grid">
+          <article class="process-card reveal">
+            <span>01 / Understand</span>
+            <h3>Define the need</h3>
+            <p>Identify the user, the challenge, and what a successful outcome should make easier.</p>
+          </article>
+          <article class="process-card reveal">
+            <span>02 / Organise</span>
+            <h3>Plan the structure</h3>
+            <p>Break the solution into content, pages, components, and essential interactions.</p>
+          </article>
+          <article class="process-card reveal">
+            <span>03 / Build</span>
+            <h3>Develop the solution</h3>
+            <p>Combine semantic HTML, responsive CSS, and focused JavaScript behaviour.</p>
+          </article>
+          <article class="process-card reveal">
+            <span>04 / Improve</span>
+            <h3>Test and refine</h3>
+            <p>Check different screen sizes, validate inputs, and improve clarity and accessibility.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="cta-band" aria-labelledby="projects-cta-title">
+      <div class="container cta-layout">
+        <div>
+          <h2 id="projects-cta-title">Try the interactive planner.</h2>
+          <p>Add, complete, filter, and delete tasks in a working JavaScript demonstration.</p>
+        </div>
+        <a class="button button-ghost" href="planner.html">Open planner <span aria-hidden="true">→</span></a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-layout">
+      <p>© <span data-current-year>2026</span> Hyllamanda Reuben. Built with HTML, CSS &amp; JavaScript.</p>
+      <ul class="footer-links">
+        <li><a href="about.html">About</a></li>
+        <li><a href="planner.html">Planner</a></li>
+        <li><a href="mailto:h.reuben2434@miva.edu.ng">Email</a></li>
+      </ul>
+    </div>
+  </footer>
+
+  <div class="toast-region" aria-live="polite" aria-atomic="true"></div>
+</body>
+</html>
